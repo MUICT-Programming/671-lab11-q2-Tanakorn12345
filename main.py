@@ -13,13 +13,13 @@ for i in range (n):
 
 def  summation(l1,l2):
     global n
-    up = [0]*n
+    update_list = [0]*n
     for i in range(n):
-      up[i] = l1[i] + l2[i]
-    return up
+      update_list[i] = l1[i] + l2[i]
+    return update_list
 
-def find_min_max(up):
-    return min(up),max(up)
+def find_min_max(update_list):
+    return min(update_list),max(update_list)
 
 print(summation(l1,l2))
 print(find_min_max(summation(l1,l2)))
